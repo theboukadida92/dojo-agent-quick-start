@@ -4,6 +4,11 @@
 
 **DOJO Agent** is an AI web automation tool that runs in your browser. A free alternative to OpenAI Operator with flexible LLM options and multi-agent system.
 
+<div align="center">
+<img src="Dojo-Agent-bitcoin.gif" width="600" alt="DOJO Agent Demo GIF" />
+<p><em>DOJO Agent’s multi-agent system tracks Bitcoin real time price in Coingecko, with the Coordinator self-correcting obstacles and guiding the Operator to adapt instantly—all running seamlessly in your browser.</em></p>
+</div>
+
 ## 🚀 Features
 
 - **Browser-Based AI Automation**: Runs directly in your browser as a Chrome extension
