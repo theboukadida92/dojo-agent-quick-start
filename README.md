@@ -117,6 +117,51 @@ OPEN_ROUTER_API_KEY=your_openrouter_api_key_here
 - **Timeout Settings**: Configure how long to wait for responses
 - **Logging Level**: Control debug information visibility
 
+## 🎛️ Model Parameters
+
+DOJO Agent uses advanced AI model parameters to control the behavior and output quality of its three specialized agents. Understanding these parameters helps you optimize performance for different tasks.
+
+### Temperature (0.0 - 1.0)
+
+**Temperature** controls the randomness and creativity of AI responses:
+
+- **Lower values (0.0 - 0.3)**: More focused, deterministic, and consistent responses
+- **Medium values (0.4 - 0.7)**: Balanced creativity and reliability
+- **Higher values (0.8 - 1.0)**: More creative, diverse, but potentially less predictable responses
+
+### Top P (0.0 - 1.0)
+
+**Top P** (nucleus sampling) controls response diversity by limiting the AI's token selection:
+
+- **Lower values (0.1 - 0.5)**: More focused responses, considers fewer word choices
+- **Medium values (0.6 - 0.8)**: Balanced diversity and focus
+- **Higher values (0.9 - 1.0)**: Maximum diversity, considers all possible word choices
+
+### Recommended Settings by Agent
+
+#### 🎯 Coordinator Agent
+- **Temperature**: 0.3 - 0.5 (Strategic planning requires consistency)
+- **Top P**: 0.7 - 0.8 (Moderate diversity for creative problem-solving)
+- **Use Case**: Task planning, strategy formulation, high-level decision making
+
+#### ⚡ Operator Agent
+- **Temperature**: 0.1 - 0.3 (Precise execution requires low randomness)
+- **Top P**: 0.5 - 0.7 (Focused responses for accurate actions)
+- **Use Case**: Web interactions, form filling, clicking elements, data extraction
+
+#### ✅ QA Reviewer Agent
+- **Temperature**: 0.2 - 0.4 (Consistent validation and error detection)
+- **Top P**: 0.6 - 0.8 (Thorough analysis with moderate diversity)
+- **Use Case**: Quality assurance, error detection, result validation, testing
+
+### Parameter Tuning Tips
+
+- **Start with recommended settings** and adjust based on your specific use case
+- **Lower temperature** for tasks requiring precision (forms, data entry)
+- **Higher temperature** for creative tasks (content generation, brainstorming)
+- **Monitor performance** and adjust parameters if responses are too rigid or too unpredictable
+- **Test different combinations** to find optimal settings for your workflow
+
 ## 💡 Usage Examples
 
 ### E-commerce Automation
