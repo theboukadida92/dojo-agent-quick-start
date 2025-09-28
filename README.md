@@ -39,34 +39,6 @@
 3. Click "Add to Chrome"
 4. Follow the setup instructions
 
-### Option 2: Install from Source
-
-1. **Clone the main repository**:
-   ```bash
-   git clone https://github.com/theboukadida92/dojo-agent.git
-   cd dojo-agent
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   # or
-   pnpm install
-   ```
-
-3. **Build the extension**:
-   ```bash
-   npm run build
-   # or
-   pnpm build
-   ```
-
-4. **Load the extension in Chrome**:
-   - Open Chrome and go to `chrome://extensions/`
-   - Enable "Developer mode" (top right)
-   - Click "Load unpacked"
-   - Select the `dist` folder from the project
-
 ## ⚡ Quick Start
 
 ### 1. Configure Your AI Provider
